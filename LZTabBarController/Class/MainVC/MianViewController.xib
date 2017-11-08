@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MianViewController">
+            <connections>
+                <outlet property="btn" destination="TOf-cD-sa9" id="n3Q-P2-buF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOf-cD-sa9">
+                    <rect key="frame" x="137.5" y="308.5" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="OFJ-Bb-AHb"/>
+                        <constraint firstAttribute="width" constant="100" id="XYR-o7-t34"/>
+                    </constraints>
+                    <state key="normal" title="跳转nextVC"/>
+                    <connections>
+                        <action selector="btnaction:" destination="-1" eventType="touchUpInside" id="Wd0-xd-INZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnT-LO-O9g">
+                    <rect key="frame" x="137.5" y="398.5" width="100" height="50"/>
+                    <state key="normal" title="跳转到我的"/>
+                    <connections>
+                        <action selector="gotoMineVC:" destination="-1" eventType="touchUpInside" id="AED-sj-Mck"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TOf-cD-sa9" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4wI-Dj-rc1"/>
+                <constraint firstItem="TOf-cD-sa9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GXa-qj-Nht"/>
+                <constraint firstItem="qnT-LO-O9g" firstAttribute="height" secondItem="TOf-cD-sa9" secondAttribute="height" id="Ojd-ny-Bj5"/>
+                <constraint firstItem="qnT-LO-O9g" firstAttribute="centerX" secondItem="TOf-cD-sa9" secondAttribute="centerX" id="P0B-ZH-CKt"/>
+                <constraint firstItem="qnT-LO-O9g" firstAttribute="top" secondItem="TOf-cD-sa9" secondAttribute="bottom" constant="40" id="gV7-9b-TSZ"/>
+                <constraint firstItem="qnT-LO-O9g" firstAttribute="width" secondItem="TOf-cD-sa9" secondAttribute="width" id="vA9-Ii-Etn"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
