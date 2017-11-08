@@ -46,6 +46,10 @@
 		A7B6EAED1FB2A942008BACC2 /* SubOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B6EAEB1FB2A942008BACC2 /* SubOneViewController.xib */; };
 		A7B6EAF11FB2A953008BACC2 /* SubTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B6EAEF1FB2A953008BACC2 /* SubTwoViewController.m */; };
 		A7B6EAF21FB2A953008BACC2 /* SubTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B6EAF01FB2A953008BACC2 /* SubTwoViewController.xib */; };
+		A7B6EAF51FB2B67D008BACC2 /* bottom-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B6EAF31FB2B67D008BACC2 /* bottom-2@2x.png */; };
+		A7B6EAF61FB2B67D008BACC2 /* bottom-2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B6EAF41FB2B67D008BACC2 /* bottom-2@3x.png */; };
+		A7B6EAF91FB2B687008BACC2 /* bottomon-2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B6EAF71FB2B687008BACC2 /* bottomon-2@3x.png */; };
+		A7B6EAFA1FB2B687008BACC2 /* bottomon-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B6EAF81FB2B687008BACC2 /* bottomon-2@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +107,10 @@
 		A7B6EAEE1FB2A953008BACC2 /* SubTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTwoViewController.h; sourceTree = "<group>"; };
 		A7B6EAEF1FB2A953008BACC2 /* SubTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubTwoViewController.m; sourceTree = "<group>"; };
 		A7B6EAF01FB2A953008BACC2 /* SubTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubTwoViewController.xib; sourceTree = "<group>"; };
+		A7B6EAF31FB2B67D008BACC2 /* bottom-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-2@2x.png"; sourceTree = "<group>"; };
+		A7B6EAF41FB2B67D008BACC2 /* bottom-2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-2@3x.png"; sourceTree = "<group>"; };
+		A7B6EAF71FB2B687008BACC2 /* bottomon-2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottomon-2@3x.png"; sourceTree = "<group>"; };
+		A7B6EAF81FB2B687008BACC2 /* bottomon-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottomon-2@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +222,10 @@
 		A75948431FB19A3E008CCFF7 /* TabBarImg */ = {
 			isa = PBXGroup;
 			children = (
+				A7B6EAF81FB2B687008BACC2 /* bottomon-2@2x.png */,
+				A7B6EAF71FB2B687008BACC2 /* bottomon-2@3x.png */,
+				A7B6EAF31FB2B67D008BACC2 /* bottom-2@2x.png */,
+				A7B6EAF41FB2B67D008BACC2 /* bottom-2@3x.png */,
 				A75948611FB19AA8008CCFF7 /* bottomon-4@2x.png */,
 				A75948601FB19AA8008CCFF7 /* bottomon-4@3x.png */,
 				A759485D1FB19AA0008CCFF7 /* bottom-4@2x.png */,
@@ -343,15 +355,19 @@
 				A75948471FB19A5B008CCFF7 /* bottom-0@2x.png in Resources */,
 				A75948531FB19A7B008CCFF7 /* bottomon-1@3x.png in Resources */,
 				A7B6EAED1FB2A942008BACC2 /* SubOneViewController.xib in Resources */,
+				A7B6EAFA1FB2B687008BACC2 /* bottomon-2@2x.png in Resources */,
 				A759486F1FB1B4AC008CCFF7 /* LZTabBarController.bundle in Resources */,
 				A759482D1FB196DE008CCFF7 /* ThirdViewController.xib in Resources */,
 				A759485F1FB19AA0008CCFF7 /* bottom-4@2x.png in Resources */,
 				A75948321FB19725008CCFF7 /* FourthViewController.xib in Resources */,
+				A7B6EAF61FB2B67D008BACC2 /* bottom-2@3x.png in Resources */,
 				A75948521FB19A7B008CCFF7 /* bottomon-1@2x.png in Resources */,
 				A75948121FB19642008CCFF7 /* Assets.xcassets in Resources */,
 				A759485B1FB19A95008CCFF7 /* bottomon-3@2x.png in Resources */,
 				A759485E1FB19AA0008CCFF7 /* bottom-4@3x.png in Resources */,
+				A7B6EAF51FB2B67D008BACC2 /* bottom-2@2x.png in Resources */,
 				A75948461FB19A5B008CCFF7 /* bottom-0@3x.png in Resources */,
+				A7B6EAF91FB2B687008BACC2 /* bottomon-2@3x.png in Resources */,
 				A759484F1FB19A72008CCFF7 /* bottom-1@3x.png in Resources */,
 				A759484A1FB19A65008CCFF7 /* bottomon-0@2x.png in Resources */,
 				A75948821FB1B92F008CCFF7 /* PushViewController.xib in Resources */,

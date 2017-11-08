@@ -32,87 +32,19 @@ alpha:(a)]
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+  
+   // self ---->  [UIApplication sharedApplication].delegate.window.rootViewController
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    
-    /*********** 需要在TabBar添加一个"+"  ***********/
-    [self ShouldAddTabBarItem];
-    
-    /*********** 不需要在TabBar添加一个"+" 传统的4个TabBarItem ***********/
-//    [self TraditionalTabBarItem];
+
+    [self TraditionalTabBarItem];
     
     self.window.rootViewController = self.tabBarC;
+
     
     return YES;
 }
 
--(void)ShouldAddTabBarItem{
-    
-    //设置TabBar子控制器
-    MianViewController *main = [[MianViewController alloc]init];
-    main.view.backgroundColor = [UIColor whiteColor];
-    main.tabBarItem.badgeValue = @"23";
-    main.title = @"首页";
-    main.navigationItem.title = @"首页";
-    main.tabBarItem.image = [UIImage imageNamed:@"bottom-0"];
-    main.tabBarItem.selectedImage = [UIImage imageNamed:@"bottomon-0"];
-    
-    SecondViewController *sec = [[SecondViewController alloc]init];
-    sec.view.backgroundColor = [UIColor whiteColor];
-    sec.tabBarItem.badgeValue = @"2";
-    sec.title = @"视频";
-    sec.navigationItem.title = @"视频";
-    sec.tabBarItem.image = [UIImage imageNamed:@"bottom-1"];
-    sec.tabBarItem.selectedImage = [UIImage imageNamed:@"bottomon-1"];
-    
-    ThirdViewController *third = [[ThirdViewController alloc]init];
-    third.view.backgroundColor = [UIColor whiteColor];
-    third.tabBarItem.badgeValue = @"3";
-    third.title = @"天气";
-    third.navigationItem.title = @"天气";
-    third.tabBarItem.image = [UIImage imageNamed:@"bottom-3"];
-    third.tabBarItem.selectedImage = [UIImage imageNamed:@"bottomon-3"];
-    
-    FourthViewController *fourth = [[FourthViewController alloc]init];
-    fourth.view.backgroundColor = [UIColor whiteColor];
-    fourth.tabBarItem.badgeValue = @"66";
-    fourth.title = @"我的";
-    fourth.navigationItem.title = @"我的";
-    fourth.tabBarItem.image = [UIImage imageNamed:@"bottom-4"];
-    fourth.tabBarItem.selectedImage = [UIImage imageNamed:@"bottomon-4"];
-    
-    //添加导航栏控制器
-    UINavigationController *navC1 = [[UINavigationController alloc] initWithRootViewController:main];
-    UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:sec];
-    UINavigationController *navC3 = [[UINavigationController alloc] initWithRootViewController:third];
-    UINavigationController *navC4 = [[UINavigationController alloc] initWithRootViewController:fourth];
-    
-    
-    //将导航控制器 添加 为LZTabBar子控制器
-    [self.tabBarC addChildViewController:navC1];
-    [self.tabBarC addChildViewController:navC2];
-    
-    /***
-     * //在这里添加一个tabBar item 类似 中间添加一个加号"+"
-     UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"add" image:[UIImage imageNamed:@"bottom-4"] selectedImage:[UIImage imageNamed:@"bottomon-4"]];
-     [self.tabBarC.lzTabBar addTabBarItem:item];
-     */
-    
-    [self.tabBarC addChildViewController:navC3];
-    [self.tabBarC addChildViewController:navC4];
-    
-    /***
-     //例子 点击加号 (发布)
-     self.tabBarC.LZTabbarBlock = ^(NSInteger from, NSInteger to) {
-     if (to == 2) {
-     PushViewController *vc = [[PushViewController alloc] init];
-     // self ---->  [UIApplication sharedApplication].delegate.window.rootViewController
-     [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:vc animated:YES completion:nil];
-     }
-     };
-     
-     */
-}
 
 -(void)TraditionalTabBarItem{
     MianViewController *main = [[MianViewController alloc]init];

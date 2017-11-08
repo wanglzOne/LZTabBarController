@@ -18,6 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
+- (IBAction)dismiss:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

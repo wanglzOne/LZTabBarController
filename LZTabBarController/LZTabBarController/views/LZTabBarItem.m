@@ -150,22 +150,22 @@
 #pragma mark - Reset TabBarItem
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
-    
+
     CGFloat imageX = 0.f;
     CGFloat imageY = 0.f;
     CGFloat imageW = contentRect.size.width;
     CGFloat imageH = contentRect.size.height * self.itemImageRatio;
-    
+
     return CGRectMake(imageX, imageY, imageW, imageH);
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {
-    
+
     CGFloat titleX = 0.f;
     CGFloat titleW = contentRect.size.width;
     CGFloat titleY = contentRect.size.height * self.itemImageRatio + (self.itemImageRatio == 1.0f ? 100.0f : -5.0f);
     CGFloat titleH = contentRect.size.height - titleY;
-    
+
     return CGRectMake(titleX, titleY, titleW, titleH);
 }
 

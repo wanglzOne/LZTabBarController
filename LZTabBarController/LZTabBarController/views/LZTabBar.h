@@ -33,7 +33,7 @@
 /***  item上标记字体大小(小红点儿上字体大小)    */
 @property (nonatomic, strong) UIFont *badgeTitleFont;
 
-/***  item图片比例   */
+/***  item图片比例(图片的位置)   */
 @property (nonatomic, assign) CGFloat itemImageRatio;
 
 /***  item个数 */

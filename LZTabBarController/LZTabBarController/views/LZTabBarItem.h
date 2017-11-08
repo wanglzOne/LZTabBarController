@@ -43,5 +43,5 @@
 /***  TabBarItem图片比例初始化方法 */
 - (instancetype)initWithItemImageRatio:(CGFloat)itemImageRatio;
 
-
+- (CGRect)imageRectForContentRect:(CGRect)contentRect;
 @end
